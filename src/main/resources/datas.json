@@ -62,6 +62,11 @@
             "id": "5",
             "name": "PRD",
             "value": "https://dayprd.day.intra.corp"
+        },
+        {
+            "id": "6",
+            "name": "JM1",
+            "value": "https://dayjm1.day.intra.corp"
         }
     ],
     "modules": [
@@ -93,24 +98,49 @@
             "value": "BR"
         },
         {
-            "id": 1,
-            "name": "BRAZIL",
-            "value": "BR"
+            "id": 2,
+            "name": "CHILE",
+            "value": "CL"
         },
         {
-            "id": 1,
-            "name": "BRAZIL",
-            "value": "BR"
+            "id": 3,
+            "name": "COLOMBIA",
+            "value": "CO"
         },
         {
-            "id": 1,
-            "name": "BRAZIL",
-            "value": "BR"
+            "id": 4,
+            "name": "GREECE",
+            "value": "GR"
         },
         {
-            "id": 1,
-            "name": "BRAZIL",
-            "value": "BR"
+            "id": 5,
+            "name": "INDIA",
+            "value": "IN"
+        },
+        {
+            "id": 6,
+            "name": "MOROCCO",
+            "value": "MA"
+        },
+        {
+            "id": 7,
+            "name": "PERU",
+            "value": "PE"
+        },
+        {
+            "id": 8,
+            "name": "ROMANIA",
+            "value": "RO"
+        },
+        {
+            "id": 9,
+            "name": "RUSSIA",
+            "value": "RU"
+        },
+        {
+            "id": 10,
+            "name": "TURKEY",
+            "value": "TR"
         }
     ]
 }

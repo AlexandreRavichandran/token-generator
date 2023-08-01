@@ -20,7 +20,7 @@ public class RequestExecutor {
             URL url = new URL(authUrl);
             HttpURLConnection http = (HttpURLConnection) url.openConnection();
             http.setRequestMethod("POST");
-            http.getHeaderFields();
+            userSelection.setJwt(http.getHeaderFields().get("authorization").get(0));
 
         } catch (Exception e) {
 

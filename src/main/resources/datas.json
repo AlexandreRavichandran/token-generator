@@ -1,0 +1,116 @@
+{
+    "uuid": "e69426",
+    "authEnvironments": [
+        {
+            "id": "0",
+            "name": "Localhost",
+            "value": "http://localhost:8080"
+        },
+        {
+            "id": "1",
+            "name": "DEV-VP",
+            "value": "https://dayint-dev.lab.day.intra.corp"
+        },
+        {
+            "id": "2",
+            "name": "INT-VP",
+            "value": "https://dayint-vp.lab.day.intra.corp"
+        },
+        {
+            "id": "3",
+            "name": "INT-NVP",
+            "value": "https://dayint-nvp.lab.day.intra.corp"
+        },
+        {
+            "id": "4",
+            "name": "UAT-VP",
+            "value": "https://dayuat-vp.sta.day.intra.corp"
+        },
+        {
+            "id": "5",
+            "name": "PRD",
+            "value": "https://dayprd.day.intra.corp"
+        }
+    ],
+    "urlEnvironments": [
+        {
+            "id": "0",
+            "name": "Localhost",
+            "value": "http://localhost:4200"
+        },
+        {
+            "id": "1",
+            "name": "DEV-VP",
+            "value": "https://dayint-dev.lab.day.intra.corp"
+        },
+        {
+            "id": "2",
+            "name": "INT-VP",
+            "value": "https://dayint-vp.lab.day.intra.corp"
+        },
+        {
+            "id": "3",
+            "name": "INT-NVP",
+            "value": "https://dayint-nvp.lab.day.intra.corp"
+        },
+        {
+            "id": "4",
+            "name": "UAT-VP",
+            "value": "https://dayuat-vp.sta.day.intra.corp"
+        },
+        {
+            "id": "5",
+            "name": "PRD",
+            "value": "https://dayprd.day.intra.corp"
+        }
+    ],
+    "modules": [
+        {
+            "id": "1",
+            "name": "Quotation",
+            "value": "quotation"
+        },
+        {
+            "id": "2",
+            "name": "Quotation basket",
+            "value": "quotations"
+        },
+        {
+            "id": "3",
+            "name": "Admin console",
+            "value": "admin"
+        },
+        {
+            "id": "4",
+            "name": "Invoicing",
+            "value": "invoicing/monthly-rental"
+        }
+    ],
+    "countries": [
+        {
+            "id": 1,
+            "name": "BRAZIL",
+            "value": "BR"
+        },
+        {
+            "id": 1,
+            "name": "BRAZIL",
+            "value": "BR"
+        },
+        {
+            "id": 1,
+            "name": "BRAZIL",
+            "value": "BR"
+        },
+        {
+            "id": 1,
+            "name": "BRAZIL",
+            "value": "BR"
+        },
+        {
+            "id": 1,
+            "name": "BRAZIL",
+            "value": "BR"
+        }
+    ]
+}

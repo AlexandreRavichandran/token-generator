@@ -1,7 +1,6 @@
 package com.arval.daytona.tokengenerator.utils;
 
 import com.arval.daytona.tokengenerator.domain.Choiceable;
-import lombok.extern.slf4j.Slf4j;
 
 import java.util.List;
 import java.util.Locale;
@@ -14,6 +13,7 @@ public interface ElementSelection<T extends Choiceable> {
     default Choiceable getElementSelection(String name, List<T> choices) {
         Scanner scanner = new Scanner(System.in);
         Long value = null;
+        System.out.println("\n");
         System.out.println("**** " + name.toUpperCase(Locale.ROOT) + " SELECTION ****");
         do{
             choices.forEach(choice -> {

@@ -4,14 +4,15 @@ import com.arval.daytona.tokengenerator.domain.Configuration;
 import com.arval.daytona.tokengenerator.domain.UserSelection;
 import com.arval.daytona.tokengenerator.utils.*;
 
-import java.awt.*;
-import java.awt.datatransfer.Clipboard;
-import java.awt.datatransfer.StringSelection;
-
 public class TokenGeneratorService {
 
     private ConfigFileReader configFileReader = new ConfigFileReader();
     private RequestExecutor requestExecutor = new RequestExecutor();
+    private String uuid;
+
+    public TokenGeneratorService(String uuid) {
+        this.uuid = uuid;
+    }
 
     public String generateToken() {
        Configuration configuration = this.getConfig();
@@ -20,14 +21,10 @@ public class TokenGeneratorService {
         userSelection.setEnvironmentUrl(this.getUrlEnvironmentSelection(configuration));
         userSelection.setAuthUrl(this.getAuthEnvironmentSelection(configuration));
         userSelection.setModule(this.getModuleSelection(configuration));
-        userSelection.setUuid(configuration.getUuid());
+        userSelection.setUuid(this.uuid);
 
-        String formattedUrl = this.requestExecutor.executeRequest(userSelection);
-        StringSelection stringSelection = new StringSelection(formattedUrl);
-        Clipboard clipboard = Toolkit.getDefaultToolkit().getSystemClipboard();;
-        clipboard.setContents(stringSelection, null);
-        System.out.println("Link copied to clipboard");
-        return "Program ended";
+        return this.requestExecutor.executeRequest(userSelection);
+
     }
 
 

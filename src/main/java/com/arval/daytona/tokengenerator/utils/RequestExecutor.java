@@ -16,7 +16,6 @@ public class RequestExecutor {
                     + "&db="
                     + userSelection.getCountry();
 
-            System.out.println(authUrl);
             URL url = new URL(authUrl);
             HttpURLConnection http = (HttpURLConnection) url.openConnection();
             http.setRequestMethod("POST");
@@ -30,7 +29,7 @@ public class RequestExecutor {
     }
 
     private String buildUrl(UserSelection userSelection) {
-        String url =  userSelection.getEnvironmentUrl() +
+        return userSelection.getEnvironmentUrl() +
                 "/login?db=" +
                 userSelection.getCountry() +
                 "&module=" +
@@ -40,8 +39,5 @@ public class RequestExecutor {
                 "&jwt=Bearer " +
                 userSelection.getJwt();
 
-        System.out.println(url);
-
-        return url;
     }
 }

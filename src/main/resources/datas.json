@@ -30,6 +30,11 @@
             "id": "5",
             "name": "PRD",
             "value": "https://dayprd.day.intra.corp"
+        },
+        {
+            "id": "6",
+            "name": "JM1",
+            "value": "https://dayjm1.lab.day.intra.corp"
         }
     ],
     "urlEnvironments": [
@@ -66,7 +71,7 @@
         {
             "id": "6",
             "name": "JM1",
-            "value": "https://dayjm1.day.intra.corp"
+            "value": "https://dayjm1.lab.day.intra.corp"
         }
     ],
     "modules": [
